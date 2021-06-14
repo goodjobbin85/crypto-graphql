@@ -12,7 +12,7 @@
         email: Faker::Internet.email
     ) 
     5.times do 
-        user.stocks.create(
+        user.cryptos.create(
             ticker: Faker::CryptoCoin.acronym, 
             price: Faker::Number.decimal(l_digits: 2)
         ) 
